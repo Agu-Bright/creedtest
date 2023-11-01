@@ -1,0 +1,33 @@
+.browse__workers, .browse__workers__container {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.browse__workers {
+  padding: 0 0 1em;
+}
+
+.workers__list * {
+  /* margin: 0;
+  padding: 0;
+  margin: 0; */
+}
+
+.workers__list {
+  padding: 0 1em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .browse__workers {
+    padding: 0 0.5em 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .browse__workers {
+    padding: 1.5em 0 0;
+    flex: 1;
+  }
+}

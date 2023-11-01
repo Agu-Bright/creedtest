@@ -1,0 +1,530 @@
+.bid__details p, .bid__details h2 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bid__details {
+  width: 100%;
+  height: auto;
+  padding-top: 0.7em;
+  padding-bottom: calc(60px + 1em);
+}
+
+/* report bid */
+.bid__details> .report__project {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(252, 252, 252, 0.427);
+  padding-bottom: 60px;
+}
+
+.bid__details> .report__project > .dismiss__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 91;
+}
+
+.bid__details> .report__project > .report__container {
+  padding: 0.8em 0.8em 1em;
+  z-index: 92;
+  background-color: #455A64;
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bid__details> .report__project > .report__container > .drag__handle {
+  height: 5px;
+  width: 80px;
+  border-radius: 23px;
+  background-color: #D9D9D9;
+  margin: 0 auto 0.5em;
+}
+
+.bid__details> .report__project > .report__container > .content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1em 0.8em 1em;
+}
+
+.bid__details> .report__project > .report__container > .content > h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.bid__details> .report__project > .report__container > .content > label {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 0.7rem;
+}
+
+.bid__details> .report__project > .report__container > .content > .buttons {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.bid__details> .report__project > .report__container > .content > .buttons > button:not(.simple) {
+  font-size: 0.75rem;
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (min-width: 370px) {
+  .bid__details> .report__project > .report__container > .content > h3 {
+    margin-bottom: 1rem;
+    font-size: 1em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > label {
+    margin-bottom: 1.2em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > label > p {
+    font-size: 0.875rem;
+  }
+
+  .bid__details> .report__project > .report__container > .content > .buttons {
+    padding-top: 3em;
+  }
+}
+
+@media (min-width: 470px) {
+  .bid__details> .report__project > .report__container > .drag__handle {
+    margin-bottom: 1rem;
+  }
+
+  .bid__details> .report__project > .report__container > .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .bid__details> .report__project > .report__container > .content > h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > .buttons {
+    padding-top: 3em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > .buttons > button:not(.simple) {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .bid__details> .report__project {
+    height: 100%;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bid__details> .report__project {
+    align-items: center;
+    height: 105%;
+    margin-top: -10px;
+    background-color: rgba(15, 14, 14, 0.38);
+  }
+
+  .bid__details> .report__project > .report__container {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .bid__details> .report__project > .report__container > .drag__handle {
+    display: none;
+  }
+
+  .bid__details> .report__project > .report__container > .content {
+    width: 70%;
+    max-width: 800px;
+    padding: 3em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+  }
+
+  .bid__details> .report__project > .report__container > .content > label {
+    font-size: 1rem;
+    margin-bottom: 0.8em;
+  }
+}
+
+.bid__details > .project__info, .bid__details > .client__info {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.bid__details > .project__info > .top {
+  background-color: #fff;
+  padding: 0.5em 0.7em;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+
+.bid__details h2 {
+  font-size: 0.75em;
+}
+
+.bid__details > .project__info > .top > .right > h3 {
+  font-size: 0.65em;
+  margin-top: 0.8em;
+}
+
+.bid__details > .project__info > .top > .right > p {
+  font-size: 0.60em;
+  margin-top: 0.5em;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bid__details > .project__info > .top > .right > p > .MuiSvgIcon-root {
+  font-size: 1.2em;
+  color: #4d4d4d;
+}
+
+.bid__details > .project__info > .top > .right > p:last-child > a {
+  color: #0000FF;
+  text-decoration: none;
+  margin-left: 0.3em;
+}
+
+.bid__details > .project__info > .details {
+  background-color: #fff;
+  padding: 1em 0.7em 1em;
+  border-radius: 4px;
+}
+
+.bid__details > .project__info > .details > h4 {
+  font-size: 0.75rem;
+  margin-bottom: 0.6em;
+  font-family: inter;
+}
+
+.bid__details > .project__info > .details > .description {
+  font-size: 0.65rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.bid__details > .project__info > .details > .skill__set > h5 {
+  font-size: 0.70rem;
+  color: #2e2e2f;
+  margin-bottom: 0.5em;
+}
+
+.bid__details > .project__info > .details > .skill__set > p {
+  font-size: 0.60rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.bid__details > .project__info > .details > .skill__set > p > span {
+  padding: 0.2em 0.5em;
+  background: rgba(217, 217, 217, 0.1);
+border: 0.5px solid #000000;
+border-radius: 10px;
+font-weight: 300;
+}
+
+.bid__details > .project__info > .details > .project__gallery {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.bid__details > .project__info > .details > .project__gallery > img {
+  width: 90%;
+  object-fit: contain;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media (min-width: 430px) {
+  .bid__details > .project__info > .details > .project__gallery {
+    margin-top: 1.8em;
+  }
+
+  .bid__details > .project__info > .details > .project__gallery > img {
+    width: 40%;
+    object-fit: contain;
+    margin: 0;
+  }
+}
+
+@media (min-width: 830px) {
+  .bid__details > .project__info > .details > .project__gallery {
+    margin-top: 1.8em;
+  }
+
+  .bid__details > .project__info > .details > .project__gallery > img {
+    width: 32%;
+    object-fit: contain;
+    margin: 0;
+  }
+}
+
+.bid__details > .project__info > .details > button:not(.simple) {
+  background-color: #DAA520;
+  color: #fff;
+  border: none;
+  padding: 0.8em 0;
+  width: 100%;
+  font-size: 0.60em;
+  margin-top: 1.7em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 370px) {
+  .bid__details {
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+  }
+
+  .bid__details > .project__info > .top {
+    padding: 0.5em 0.7em;
+    margin-bottom: 10px;
+  }
+
+  .bid__details h2 {
+    font-size: 0.90em;
+  }
+
+  .bid__details > .project__info > .details {
+    padding: 1em;
+  }
+
+  .bid__details > .project__info > .details > h4 {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+
+  .bid__details > .project__info > .top > .right > h3 {
+    font-size: 0.70em;
+  }
+  
+  .bid__details > .project__info > .top > .right > p {
+    font-size: 0.70em;
+    margin-top: 0.5em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .bid__details > .project__info > .details > .description {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin-bottom: 1.2em;
+  }
+
+  .bid__details > .project__info > .details > .skill__set > h5 {
+    margin-bottom: 0.7em;
+  }
+
+  .bid__details > .project__info > .details > .skill__set > p {
+    font-size: 0.75rem;
+    gap: 7px 5px;
+  }
+  
+  .bid__details > .project__info > .details > .skill__set > p > span {
+    padding: 0.2em 0.7em;
+
+  }
+  
+  .bid__details > .project__info > .details > button:not(.simple) {
+    padding: 0.8em 0;
+    font-size: 0.875em;
+    margin-top: 1.7em;
+  }
+}
+
+/* client info */
+.bid__details > .client__info {
+  border-radius: 4px;
+  background-color: #fff;
+  margin-top: 0.5em;
+  padding: 0.7em 0.7em 0.9em;
+  width: 85%;
+}
+
+.bid__details > .client__info > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.70rem;
+  margin-top: 0.8em;
+}
+
+.bid__details > .client__info > p > img {
+  height: 13px;
+  object-fit: contain;
+}
+
+.bid__details > .client__info > p > .MuiSvgIcon-root {
+  font-size: 1.2em;
+  color: #4d4d4d;
+}
+
+.bid__details > .client__info > .rating__box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0.5em 0;
+}
+
+.bid__details > .client__info > .rating__box > .rating, .bid__details > .client__info > .rating__box > .review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bid__details > .client__info > .rating__box > .rating {
+  gap: 3px;
+}
+
+.bid__details > .client__info > .rating__box .MuiSvgIcon-root {
+  font-size: 0.9em;
+}
+
+.bid__details > .client__info > .rating__box > .rating > .MuiSvgIcon-root {
+  color: #CCCCCC;
+}
+
+.bid__details > .client__info > .rating__box p {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.bid__details > .client__info > h3 {
+  margin-top: 1.7em;
+  font-size: 0.75em;
+}
+
+@media (min-width: 370px) {
+  .bid__details > .client__info > h3 {
+    margin-top: 1.7em;
+    font-size: 0.90em;
+  }
+
+  .bid__details > .client__info > p {
+    font-size: 0.875rem;
+    gap: 5px;
+  }
+  
+  .bid__details > .client__info > p > img {
+    height: 15px;
+  }
+  
+  .bid__details > .client__info > p > .MuiSvgIcon-root {
+    font-size: 1.3em;
+  }
+
+  .bid__details > .client__info {
+    padding: 1em 1em 1.2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bid__details {
+    display: flex;
+    gap: 10px;
+  }
+
+  .bid__details .project__info {
+    flex: 1;
+    width: auto;
+  }
+
+  .bid__details .client__info {
+    width: auto;
+    flex: 0.35;
+    margin: 0;
+    max-width: 270px;
+    max-height: 290px;
+  }
+
+  .bid__details > .project__info > .details {
+    padding: 1.5em;
+  }
+
+  .bid__details h2 {
+    font-size: 1.1rem;
+  }
+
+  .bid__details > .project__info > .details > .description {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 1.5em;
+    color: #484747;
+  }
+
+  .bid__details > .project__info > .top {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bid__details > .project__info > .top > .right > h3 {
+    font-size: 0.875em;
+    margin: 0;
+  }
+  
+  .bid__details > .project__info > .top > .right > p {
+    font-size: 0.75rem;
+    margin-top: 0.5em;
+  }
+  
+  .bid__details > .project__info > .top > .right > p > .MuiSvgIcon-root {
+    font-size: 1.2em;
+  }
+
+  .bid__details > .project__info > .details > .skill__set > h5 {
+    margin-bottom: 1em;
+    font-size: 0.875rem;
+  }
+
+  .bid__details > .project__info > .details > .skill__set > p {
+    font-size: 0.875rem;
+    gap: 10px;
+  }
+  
+  .bid__details > .project__info > .details > .skill__set > p > span {
+    padding: 0.3em 0.9em;
+    border-radius: 24px;
+
+  }
+  
+  .bid__details > .project__info > .details > button:not(.simple) {
+    font-size: 1em;
+    width: 170px;
+    margin-left: auto;
+    position: relative;
+    left: calc(100% - 170px);
+  }
+}

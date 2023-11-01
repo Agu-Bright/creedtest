@@ -1,0 +1,187 @@
+/* BACKGROUND CONTAINER */
+
+.success-container {
+    background-color: #edeff0;
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .success-container > img {
+    height: 21rem;
+    display: inline-block;
+  }
+  
+  .success-container > p {
+    color: #6d90a0;
+    font-size: 1.1rem;
+    position: relative;
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+    top: 1.3rem;
+    font-weight: bold;
+  }
+  
+  /* LOG IN AND SIGN UP BUTTONS */
+  .btn-register {
+    margin: 3rem auto 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .the-button {
+    background-color: #6d90a0;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .warning-note{
+    color: red !important;
+    text-align: center;
+    font-size: 14px !important;
+    font-family: Inter;
+  }
+
+  /* MEDIA QUERIES */
+  
+  @media screen and (max-width: 1200px) {
+    .success-container {
+      width: 35%;
+    }
+  }
+  
+  @media screen and (max-width: 1070px) {
+    .success-container > img {
+      height: 19rem;
+    }
+    .success-container > p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .success-container {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .success-container > img {
+      height: 18rem;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    .success-container {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .success-container {
+      width: 50%;
+    }
+  
+    .success-container > p {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .success-container {
+      width: 55%;
+    }
+    .success-container > img {
+      height: 16rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .success-container {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .success-container > img {
+      height: 17rem;
+    }
+    .btn-register > a > button {
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: interbold;
+    }
+  
+    .success-container {
+      width: 70%;
+    }
+  
+    .btn-register {
+      margin: 2rem;
+      top: 1rem;
+    }
+    .section-job {
+      /* height: 100vh; */
+      padding: 0;
+    } 
+    .the-button {
+        background-color: #6d90a0;
+        color: #fff;
+        outline: none;
+        border: none;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-family: intermedium;
+        line-height: 0%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .success-container {
+      width: 90%;
+    }
+    .success-container > img {
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    
+  .the-button {
+    background-color: #6d90a0;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: intermedium;
+    line-height: 0%;
+  }
+  }
+
+  @media screen and (max-width: 334px) {
+    
+    .the-button {
+      font-size: 10px;
+    }
+    }
+  

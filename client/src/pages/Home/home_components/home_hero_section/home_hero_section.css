@@ -1,0 +1,324 @@
+/* THIS IS THE CONTAINER FOR HERO IMG */
+.dslide {
+  width: 100%;
+  height: 420px;
+  max-height: 420px;
+  min-height: 420px;
+  margin: 0;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                         rgba(0, 0, 0, 0.7)), url('./../hero-images/hero1.jpg');
+     */
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
+  animation: 0.3s ease-in imageAnimation;
+}
+.hero-btn-dipslay-none {
+  display: none;
+}
+.slide-content {
+  position: absolute;
+  animation: slide-up 1.5s ease;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 2s ease;
+}
+.current {
+  opacity: 1;
+  transition: translateX(0);
+}
+.arrows-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* other styles */
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  /* background-color: #fff; */
+  cursor: pointer;
+  /* other styles */
+}
+
+.arrow-left {
+  left: 0px;
+  /* transform: rotate(45deg); */
+  /* padding-right: 4rem; */
+}
+
+.arrow-right {
+  right: 10px;
+  /* transform: rotate(-135deg); */
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    top: 0rem;
+    opacity: 1;
+  }
+}
+
+/* THIS CODE IS FOR IOS DEVICES, THEY DONT SUPPORT BACKGROUND-ATTATCHMENT: FIXED */
+
+@supports (-webkit-touch-callout: none) {
+  .dslide {
+    width: 100%;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Hire the best<br />
+            workers for any job,  */
+.hero-title {
+  font-family: interbolder;
+  text-shadow: 0px 4.49186px 4.49186px rgba(0, 0, 0, 0.25);
+  font-size: 50px;
+  margin-left: 7%;
+  margin-top: 50px;
+  color: white;
+  text-align: left;
+  opacity: 0.9;
+  width: 50%;
+}
+
+.hero-title-active {
+  color: goldenrod;
+}
+
+/* Work multiple jobs
+         with Nigeria’s number 1 freelancing site*/
+.hero-para {
+  font-size: 18px;
+  font-family: inter;
+  margin-left: 7%;
+  margin-top: 15px;
+  color: white;
+  opacity: 0.8;
+}
+/* THE CONTAINER THAT HOLDS THE 2 BUTTONS */
+.hero-btn-display {
+  display: flex;
+  width: auto;
+  height: auto;
+  background: transparent;
+  margin-left: 7%;
+  margin-top: 30px;
+}
+/* WORK AND EARN MONEY */
+.hero-btn1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+
+  width: 170px;
+  height: 30px;
+  font-family: inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 33px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 33px;
+  text-decoration: none;
+  text-decoration-color: none;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: 0.5s;
+}
+
+.hero-btn1:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+/* HIRE A WORKER */
+.hero-btn2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 13.64px;
+
+  width: 150px;
+  height: 30px;
+
+  background: #daa520;
+  border-radius: 6.81818px;
+  text-decoration: none;
+  text-decoration-color: none;
+  font-family: inter;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 33px;
+  margin-left: 30px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* THIS IS WHAT SHOWS AT THE BUTTOM OF EACH HERO-IMG */
+.img-label {
+  position: absolute;
+  right: 3%;
+  top: 390px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.8;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .hero-title {
+    font-size: 40px;
+    margin-left: 7%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-title {
+    font-size: 25px;
+    margin-left: 11%;
+    margin-top: 30px;
+    opacity: 0.8;
+    width: 70%;
+  }
+
+  .hero-para {
+    font-size: 16px;
+    font-family: inter;
+    margin-left: 12%;
+    margin-top: 15px;
+    margin-right: 5%;
+    color: white;
+    opacity: 0.6;
+  }
+
+  .hero-btn-display {
+    display: block;
+    width: auto;
+    height: auto;
+    background: transparent;
+    margin-left: 12%;
+    margin-top: 30px;
+  }
+
+  .hero-btn1 {
+    width: 155px;
+    height: 25px;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    opacity: 0.9;
+    color: white;
+  }
+
+  .hero-btn2 {
+    width: 130px;
+    height: 25px;
+    margin-left: 0;
+    margin-top: 10px;
+    opacity: 0.9;
+    background-color: goldenrod;
+  }
+  .img-label {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .hero-title {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 25px;
+  }
+
+  .hero-para {
+    font-size: 14px;
+    font-family: inter;
+    margin-left: 7%;
+    margin-top: 15px;
+    margin-right: 5%;
+    color: white;
+  }
+
+  .hero-btn2 {
+    width: 120px;
+    height: 25px;
+    margin-left: 0;
+    margin-top: 10px;
+    opacity: 0.9;
+    font-size: 13px;
+    background-color: goldenrod;
+  }
+
+  /* THIS IS WHAT SHOWS AT THE BUTTOM OF EACH HERO-IMG */
+  .img-label {
+    font-size: 12px;
+  }
+}

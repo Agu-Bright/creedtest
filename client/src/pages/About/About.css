@@ -1,0 +1,10 @@
+/* .section-about {
+
+} */
+.about-main-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-hero {
+  background-color: #455a64;
+}

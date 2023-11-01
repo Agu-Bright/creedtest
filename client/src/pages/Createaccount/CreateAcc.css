@@ -1,0 +1,252 @@
+.creatAcc{
+    width: 100%;
+    height:auto;
+    background: url(../../assets/Dashboard/tonyer.png) no-repeat center
+    center fixed;
+  background-color: #f4f4f4;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (hover: none) {
+    .creatAcc {
+        background-attachment: initial;
+    }
+}
+
+    .createAcc-container{
+        margin-top: -0.2rem;
+        display: flex;
+    flex-direction: column;
+       
+    }
+    .acc-header h1{
+        text-align: center;
+        font-weight: bold;
+        color: #5B6169;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+    .acc-content{
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .creedlnace-Acc{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      background-color: #E1E1E1;
+      border-radius: 8px;
+      box-shadow: 0px 0px 2px rgb(112, 111, 111);
+    }
+    .creedlnace-Acc >:nth-child(1){
+       text-align: center;
+      margin-top: 3rem;
+      color: #2D3748;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .creedlnace-Acc >:nth-child(3){
+        font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+    
+    }
+    .creedlnace-Acc >:nth-child(4){
+        padding: 20px 15px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #808080;
+        font-size: 13.8px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    
+    }
+    
+    .creedlnace-Acc >:nth-child(5){
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem 0;
+    }
+    .enterprise-Acc{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        background-color: #E1E1E1;
+        border-radius: 8px;
+        box-shadow: 0px 0px 2px rgb(112, 111, 111);
+    }
+    .enterprise-Acc >:nth-child(1){
+        text-align: center;
+        margin-top: 3rem;
+        color: #2D3748;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0 2rem;
+    }
+    
+    .enterprise-Acc >:nth-child(3){
+        font-size: 0.9rem;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    padding: 0 3rem;
+    
+    }
+    .enterprise-Acc >:nth-child(4){
+        padding: 20px 15px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #808080;
+        font-size: 13.8px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .enterprise-Acc >:nth-child(5){
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    @media screen and (max-width:800px) {
+        /* .creatAcc{
+           height: 1500px;
+          
+            } */
+        .choice__card {
+            width: 350px !important;
+        }
+        .post-a-job-footer-links{
+            display: none;
+        }
+        .acc-content{
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center;
+            padding-bottom: 3rem;
+        }
+        .creedlnace-Acc{
+            align-self: center;
+            width: 90%;
+            border-right:none;
+            border-bottom: 1px solid grey;
+        }
+        .enterprise-Acc{
+            align-self: center;
+            width: 90%;
+            border-top: 1px solid grey;
+            border-left: none;
+        }
+        .creedlnace-Acc >:nth-child(1), .enterprise-Acc >:nth-child(1){
+            font-size: 1rem;
+        }
+        
+        .creedlnace-Acc >:nth-child(4){
+            padding: 20px 15px;
+            width: 80%;
+            align-self: center;
+            border: none;
+            border-radius: 10px;
+            background-color: #808080;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+            transition: all 0.5s ease-in-out;
+            
+            }
+            .enterprise-Acc >:nth-child(4){
+            width: 80%;
+            font-size: 0.8rem;
+          
+            }
+           
+    }
+
+.creedlnace-Acc > :nth-child(3) {
+    padding: 0 1rem;
+}
+
+.enterprise-Acc > :nth-child(3) {
+    padding: 0 1rem;
+}
+
+@media (min-width: 801px) {
+    .creatAcc {
+        height: calc(100vh - 65px) !important;
+        background-color: #EDEFF0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creatAcc > .createAcc-container {
+        flex: 1;
+    }
+
+    .creatAcc > .createAcc-container > .acc-content {
+        margin: 0 auto;
+        gap: 70px;
+        justify-content: center;
+    }
+
+    .creatAcc > .post-a-job-footer {
+        margin: 0;
+        padding: 1.5rem 0;
+        /* background-color: #EDEFF0; */
+        width: 100%;
+    }
+
+    .creatAcc > .post-a-job-footer .post-a-job-footer-links {
+        gap: 1.5rem;
+    }
+
+    .creatAcc > .post-a-job-footer * {
+        margin: 0;
+    }
+
+    .acc-header h1 {
+        margin-top: 2rem;
+    }
+    
+    .choice__card {
+        min-width: 313px;
+        max-width: 333px;
+    }
+
+    .choice__card > :nth-child(3) {
+        font-family: intermedium;
+    }
+
+    .choice__card > :nth-child(4) {
+        font-family: intermedium;
+    }
+}

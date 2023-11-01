@@ -1,0 +1,149 @@
+.navbar-smallscreen{
+    display: none;
+}
+.navbar-smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #455A64;
+    transition: 0.5s ease-in-out;
+    flex-direction: column;
+    z-index: 111111111;
+    margin: 0 auto;
+}
+
+.navbar_smallscreen-logo{
+text-align: center;
+
+
+}
+.navbar_smallscreen-logo img{
+    width: 50%;
+}
+.navbar-smallscreen_links{
+    list-style: none;
+    width: auto;
+    
+    
+
+}
+.navbar-smallscreen_links li{
+   display: block;
+   margin: 0;
+   width: auto;
+   margin-top: 1.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 15px;
+   cursor: pointer;
+   text-align: center;
+   margin-bottom: 20px;
+ 
+
+}
+
+.navbar-smallscreen_links li a{
+color: white;
+}
+.navbar-smallscreen-job-btn{
+    background-color: #DAA520;
+    height: 35px;
+    width: 125px;
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.navbar-smallscreen-buttons{
+    margin: 0 1rem;
+    padding: 0.9rem 2rem ;
+    border: none;
+    font-size: 1rem;
+    color: black;
+}
+.overlay__close{
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    
+}
+.navbar-smallscreen-buttons-login{
+background-color: #C9E9F6;
+color: #263238 !important;
+}
+.navbar-smallscreen-buttons-signup{
+background-color: #263238;
+color:#C9E9F6 !important;
+}
+.flex__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+              transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+              transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+@media screen and (max-width:1000px) {
+   .navbar-smallscreen{
+    display: flex;
+   } 
+   .navbar-smallscreen-job-btn button{
+    background-color: #DAA520;
+    padding: 0.7rem 1.7rem ;
+    font-size: 1rem;
+    }
+    .navbar-smallscreen-buttons button{
+    padding: 0.8rem 1.7rem ;  
+    border: none;
+    font-size: 1rem;
+    }
+}
+
+@media screen  and (max-width:550px){
+
+    .navbar-smallscreen_links li{
+      
+        font-size: 1rem;
+        margin-left: 0;
+
+    }
+    
+    
+}
+

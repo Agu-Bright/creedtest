@@ -1,0 +1,150 @@
+.for-creedlancers {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid goldenrod;
+  display: flex;
+  border-bottom: 3px solid goldenrod;
+}
+for-creedlancers-img {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  margin-left: 0%;
+  margin-bottom: 2rem;
+  background: url(../../../../assets/for-creedlancers/image.png);
+  transform: rotate(-6.46deg);
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+creedlance-gif {
+  width: 90%;
+  height: 300px;
+  left: 44px;
+  margin-top: 50px;
+  background: url(../../../../assets/for-creedlancers/for-creedlancers.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.space-before-text {
+  height: 100px;
+  background-color: transparent;
+  width: 1px;
+  display: block;
+}
+
+@media screen and (max-width: 980px) {
+  .for-creedlancers {
+    width: 100%;
+  }
+  .heading-text {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .for-creedlancers {
+    width: 100%;
+    display: block;
+  }
+
+  .hidden-header {
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+
+  .img-part {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    height: auto;
+  }
+  .heading-text {
+    margin-right: 0%;
+  }
+
+  .space-before-text {
+    display: none;
+  }
+  .text-part {
+    width: 80%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+
+  .text-part p {
+    margin-right: 20px;
+  }
+
+  for-creedlancers-img {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin-top: -30px !important;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../../../assets/for-creedlancers/image.png);
+    transform: rotate(-6.46deg);
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  creedlance-gif {
+    width: 270px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: url(../../../../assets/for-creedlancers/for-creedlancers.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-part {
+    width: 95%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .hidden-header {
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+  .heading-text {
+    font-size: 16px;
+  }
+
+  .bullet-point {
+    font-size: 14px;
+  }
+}

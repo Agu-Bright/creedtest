@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./dist/output.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: white; */
+            background-color: #1E1E1E;
+        }
+
+        .star-watermark {
+            position: fixed;
+            top: 40vh;
+            height: 40vh;
+            left: 0;
+            object-fit: contain;
+            overflow: visible;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 50%;
+        }
+
+        .logo {
+            height: 4rem;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        main {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4px;
+        }
+
+        .hero {
+            height: 30vh;
+            object-fit: cover;
+            border-radius: 0.25rem;
+            border: 1px solid #DAA520;
+            width: 100%;
+            z-index: 3;
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 10px;
+            font-size: 1.3rem;
+        }
+
+        .message {
+            white-space: pre-line;
+            font-family: 'Inter', sans-serif;
+            font-weight: normal;
+            color: #fff;
+        }
+
+        .cta {
+            background-color: #DAA520;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 3.5rem auto;
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #455A64;
+            border-radius: 0.75rem;
+            position: relative;
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        footer>img {
+            position: absolute;
+            top: -1.5rem;
+            left: -2.5rem;
+            width: 48vw;
+            pointer-events: none;
+            object-fit: contain;
+        }
+
+        /* flex items-center justify-between flex-1 gap-2 */
+        footer .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        footer .logo-container {
+            flex: 1;
+        }
+
+        footer .flogo {
+            width: 10rem;
+            object-fit: contain;
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        /* lex items-center gap-3 lg:gap-5 */
+        footer .top .middle {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            flex: 1;
+            justify-content: center;
+        }
+
+        /* h-8 object-contain lg:h-10 */
+        footer .top .middle img {
+            height: 2rem;
+            object-fit: contain;
+        }
+
+        footer .top .faq {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            font-weight: 600;
+            flex: 1;
+            text-align: left;
+        }
+
+        footer .message {
+            color: #fff;
+            margin-top: 1.25rem;
+            text-align: center;
+            font-size: 0.875rem;
+            white-space: pre-line;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+
+        footer .message a {
+            color: #DAA520;
+        }
+
+        footer .copy-right {
+            color: #DAA520;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (min-width: 640px) {
+            .cta {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            footer .top .faq {
+                text-align: right;
+            }
+        }
+
+        @media (min-width: 768px) {
+            footer .top {
+                width: 100%;
+            }
+/* 
+            .flogo {
+                float: left;
+                background-color: red;
+            }
+
+            footer .middle {
+                margin: 0 auto;
+                background-color: green;
+                width: 30%;
+            }
+
+            .faq {
+                float: right;
+            } */
+        }
+
+        @media (min-width: 1024px) {
+            .star-watermark {
+                top: 35vh;
+                left: 27vw;
+                height: 80vh;
+            }
+
+            .logo {
+                height: 4.5rem;
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            main {
+                width: 85%;
+            }
+
+            .hero {
+                height: 40vh;
+            }
+
+            h1 {
+                margin-top: 10px;
+                font-size: 3rem;
+            }
+
+            footer {
+                padding: 1.5rem;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            footer>img {
+                top: -4.8rem;
+                left: -4rem;
+                width: 22vw;
+            }
+
+            /* footer .logo-container {
+        background-color: red;
+      } */
+
+            footer .flogo {
+                width: 12rem;
+                /* height: auto; */
+            }
+
+            footer .top .middle {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+            }
+
+            footer .top .middle img {
+                height: 2.5rem;
+            }
+
+            footer .message {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            footer .copy-right {
+                font-size: 1rem;
+                margin-top: 3rem;
+            }
+        }
+        /*bg=star: https://res.cloudinary.com/dighewixb/image/upload/v1698397392/Photo/krzwmhzdsl7phiy8isb9.png */
+        /*logo-black: https://res.cloudinary.com/dighewixb/image/upload/v1698397452/Photo/iuzjm5txi993xmuorujk.png  */
+        /*logo-white: https://res.cloudinary.com/dighewixb/image/upload/v1698397520/Photo/ezrcsrqdkyywm9rxi6mb.png  */
+        /*hero: https://res.cloudinary.com/dighewixb/image/upload/v1698397575/Photo/hyz85srv8c734yzxuqty.png  */
+        /*logo-text: https://res.cloudinary.com/dighewixb/image/upload/v1698397853/Photo/zreumdi7qasmu5mddy85.png */
+        /*facebook: https://res.cloudinary.com/dighewixb/image/upload/v1698397984/Photo/bdo2vpxcbcff2qd7jaw4.png  */
+        /*instagram: https://res.cloudinary.com/dighewixb/image/upload/v1698398019/Photo/zp2e7o0j9eqahibias2l.png */
+        /*linkedln: https://res.cloudinary.com/dighewixb/image/upload/v1698398068/Photo/bydo9p0rx4zcvsbljlc8.png  */
+        /*twitter: https://res.cloudinary.com/dighewixb/image/upload/v1698398113/Photo/bfthz7bfiih9urxegg08.png  */
+        /*youtube: "https://res.cloudinary.com/dighewixb/image/upload/v1698398187/Photo/mpa8shpbvx5nywh0sziq.png  */
+        /*  */
+    </style>
+</head>
+
+<body>
+    <!-- star watermark -->
+    <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698397392/Photo/krzwmhzdsl7phiy8isb9.png" alt="stars" class="star-watermark" />
+    <!-- end of star watermark -->
+    <main>
+
+        <!-- logo -->
+<!-- 
+        <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698397452/Photo/iuzjm5txi993xmuorujk.png" alt="creedlance logo black" class="logo" /> -->
+
+        <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698397520/Photo/ezrcsrqdkyywm9rxi6mb.png" alt="creedlance logo black" class="logo logo-light" />
+
+        <!-- End of Logo -->
+
+        <!-- hero banner -->
+        <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698397575/Photo/hyz85srv8c734yzxuqty.png" alt="hero image" class="hero" />
+        <!-- End of hero banner -->
+
+        <h1 class="font-work font-bold text-textblack my-5 dark:text-white lg:mt-10 lg:text-4xl">Welcome to Creedlance - Your #1 Gateway to Jobs and Skilled Workers.</h1>
+
+        <!-- Message -->
+        <p class="message">
+            Hey there,
+            
+            We're thrilled to welcome you to Creedlance, your one-stop platform for finding jobs, skilled professionals, and
+            connecting with like-minded individuals.
+            
+            At Creedlance, we're dedicated to helping you:
+           
+            • Discover exciting job opportunities that match your skills and interests.
+            
+            • Connect with skilled and trusted workers who can help you accomplish your projects.
+            
+            • Build a network and engage with our vibrant community of professionals.
+            
+            
+            To get started, here are a few things you can do:
+            
+            • Complete your profile: Make sure your profile is complete and showcases your skills and experiences.
+            
+            • Explore job listings: Browse through our job listings to find opportunities that align with your career goals.
+            
+            • Post a project: If you have a project in mind, create a job listing and connect with skilled workers who can bring
+            your
+            ideas to life.
+            
+            • Connect with others: Join discussions, network with professionals, and stay updated with the latest industry trends on
+            our platform.
+            
+            If you have any questions or need assistance, our support team is here to help. Just reply to this email or visit our
+            Help Center.
+            
+            Welcome to the Creedlance community, We're excited to have you on board, and we look forward to helping
+            you achieve your goals.
+
+            Best Regards, 
+            Creedlance Team.
+        </p>
+
+        <!-- CTA Button -->
+        <a href="#" class="cta">Contact us now</a>
+
+        <!-- Footer -->
+        <footer class="bg-secondary rounded-xl relative p-4 overflow-hidden lg:p-6">
+            <div>
+                <div class="top">
+                    <div class="logo-container">
+                        <img src=" https://res.cloudinary.com/dighewixb/image/upload/v1698397853/Photo/zreumdi7qasmu5mddy85.png" class="flogo" />
+                    </div>
+                    <div class="middle">
+                        <a target="_blank" href="https://x.com/creed_lance?s=11&t=K6d13r0dp281QpQUsQTlJA">
+                            <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698398113/Photo/bfthz7bfiih9urxegg08.png" class="h-8 object-contain lg:h-10" />
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/creedlanceofficial/">
+                            <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698398019/Photo/zp2e7o0j9eqahibias2l.png" class="h-8 object-contain lg:h-10" />
+                        </a>
+                        <a target="_blank" href="https://web.facebook.com/creedlanceofficial">
+                            <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698397984/Photo/bdo2vpxcbcff2qd7jaw4.png" class="h-8 object-contain lg:h-10" />
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC4hQg1ZQHdCnq9Xnwo54dRQ">
+                            <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698398187/Photo/mpa8shpbvx5nywh0sziq.png" class="h-8 object-contain lg:h-10" />
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/creedlance/">
+                            <img src="https://res.cloudinary.com/dighewixb/image/upload/v1698398068/Photo/bydo9p0rx4zcvsbljlc8.png" class="h-8 object-contain lg:h-10" />
+                        </a>
+                    </div>
+                    <a href="#" class="faq">FAQ</a>
+                </div>
+                <p class="message">
+                    Manage Email Settings If you believe this has been sent to you in error, please safely
+                    unsubscribe. For more information, please see our <a href="#" class="underline">privacy policy</a>.©
+                    2023
+                    Creedlance. All rights reserved. Registered Office: Creedlance Limited,
+                    4-6 Riverwalk, Citywest Business Park, Rivers, Nigeria.
+
+                    You are receiving this email because you are an awesome customer of <strong>Creedlance</strong>.
+                </p>
+                <p class="copy-right">© 2023 CreedLance® Global Inc. </p>
+            </div>
+
+            <!-- star watermark -->
+            <img src=" https://res.cloudinary.com/dighewixb/image/upload/v1698397392/Photo/krzwmhzdsl7phiy8isb9.png"
+                class="absolute -top-8 -left-8 w-[28vw] lg:w-[22vw] lg:-top-14 lg:-left-12 pointer-events-none" />
+            <!-- end of star watermark -->
+        </footer>
+        <!-- End of footer -->
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+.filter__bar * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.filter__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.filter__bar > button {
+  width: 70px;
+  height: 28px;
+  background-color: #D9D9D9;
+  border: none;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-size: 0.70rem;
+}
+
+.filter__bar > button > .MuiSvgIcon-root {
+  font-size: 1.7em;
+}
+
+.filter__bar, .filter__bar > .alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter__bar > .alert > .MuiSvgIcon-root {
+  font-size: 1em;
+  color: #4d483e;
+}
+
+.filter__bar > .alert > p {
+  font-size: 0.60rem;
+}
+
+@media (min-width: 354px) {
+  .filter__bar > button {
+    width: 75px;
+    font-size: 12px;
+  }
+
+  .filter__bar > .alert > p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter__bar > button {
+    width: 85px;
+    height: 38px;
+  }
+
+  .filter__bar > .alert > .MuiSvgIcon-root {
+    font-size: 1.3em;
+    color: #4d483e;
+  }
+
+  .filter__bar > .alert > p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filter__bar {
+    display: none;
+  }
+}

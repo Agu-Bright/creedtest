@@ -1,0 +1,323 @@
+.worker__card * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.worker__card {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: flex;
+  padding: 0.90em 0.75em;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.worker__card > img {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+}
+
+.worker__card > .details {
+  flex: 1;
+}
+
+.worker__card > .details > .card__header > .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.worker__card > .details > .card__header > .top > .left {
+  padding: 0;
+}
+
+.worker__card > .details > .card__header > .top > .left > a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3B3BF2;
+}
+
+.worker__card > .details > .card__header > .top > .left > .handle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .handle > p {
+  font-size: 0.60rem;
+  font-weight: 300;
+}
+
+.worker__card > .details > .card__header > .top > .left > .handle > img {
+  height: 10px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box .ratings {
+  display: flex;
+  align-items: center;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box .ratings > .MuiSvgIcon-root {
+  font-size: 0.7em;
+  color: #FFC700;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box .ratings > .rating__figure{
+  font-size: 0.60rem;
+  margin-left: 5px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box > .location {
+  display: flex;
+  align-items: center;
+  font-size: 0.60rem;
+  gap: 3px;
+}
+
+.worker__card > .details > .card__header > .top > .left > .ratings-box > .location > img {
+  height: 10px;
+  object-fit: contain;
+}
+
+.worker__card > .details > .card__header > .top > .left > h5 {
+  font-size: 0.60rem;
+  margin-top: 5px;
+}
+
+.worker__card > .details > .card__header > .top > .right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.worker__card > .details > .card__header > .top > .right > h6 {
+  font-size: 0.75rem;
+}
+
+.worker__card > .details > .card__header > .top > .right > p {
+  font-size: 0.60rem;
+  text-align: right;
+  font-weight: 300;
+}
+
+.worker__card > .details > .card__header > .top > .right > .MuiSvgIcon-root {
+  font-size: 0.875rem;
+  align-self: flex-end;
+  justify-self: flex-end !important;
+  position: absolute;
+  bottom: 0;
+}
+
+.worker__card > .details > .card__header > .top > .right > .MuiSvgIcon-root {
+  font-size: 0.875rem;
+  align-self: flex-end;
+  justify-self: flex-end !important;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.worker__card > .details > .description {
+  font-size: 0.60rem;
+  line-height: 1.5em;
+  margin: 0.7em 0.5em 0.5em 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+          line-clamp: 5; 
+  -webkit-box-orient: vertical;
+}
+
+.worker__card > .details > .card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8em;
+  gap: 5px;
+}
+
+.worker__card > .details > .card__footer > .tags {
+  font-size: 0.60rem;
+  color: #727272;
+}
+
+.worker__card > .details > .card__footer > button {
+  font-size: 0.65rem;
+  height: 27px;
+  width: 64px;
+  background-color: #DAA520;
+  border-radius: 1px;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width: 375px) {
+  .worker__card > img {
+    height: 54px;
+    width: 54px;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > a {
+    font-size: 1rem;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle {
+    margin: 5px 0;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle > p {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle > img {
+    width: 15px;
+    object-fit: contain;
+  }
+
+  .worker__card > .details > .description {
+    font-size: 0.85rem;
+    line-height: 1.5em;
+    margin: 0.8em 0.5em 0.5em 0;
+  }
+
+  .worker__card > .details > .card__footer > .tags {
+    font-size: 0.75rem;
+    line-height: 1.5em;
+  }
+
+  .worker__card > .details > .card__footer > button {
+    font-size: 0.75rem;
+    height: 34px;
+    width: 84px;
+  }
+}
+
+@media (min-width: 768px) {
+  .worker__card {
+    margin-bottom: 1.5em;
+    padding: 1.5em 1.5em 1.5em 1em;
+    gap: 1em;
+  }
+
+  .worker__card > img {
+    height: 104px;
+    width: 104px;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > a {
+    font-size: 1.3rem;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle {
+    margin: 5px 0;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle > p {
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .ratings-box .ratings > .MuiSvgIcon-root {
+    font-size: 1.3em;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .ratings-box > .ratings > .rating__figure {
+    font-size: 0.90em;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .handle > img {
+    margin-left: 5px;
+  }
+
+  .worker__card > .details > .description {
+    font-size: 0.85rem;
+    line-height: 1.5em;
+    margin: 0.8em 0.5em 0.5em 0;
+  }
+
+  .worker__card > .details > .card__footer > .tags {
+    font-size: 0.75rem;
+    line-height: 1.5em;
+  }
+
+  .worker__card > .details > .card__footer > button {
+    font-size: 0.75rem;
+    height: 34px;
+    width: 84px;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .ratings-box {
+    gap: 15px;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > .ratings-box > .location {
+    font-size: 0.90rem;
+    gap: 5px;
+  }
+  
+  .worker__card > .details > .card__header > .top > .left > .ratings-box > .location > img {
+    height: 15px;
+    object-fit: contain;
+  }
+
+  .worker__card > .details > .card__header > .top > .left > h5 {
+    margin-top: 1em;
+    font-size: 0.85rem;
+  }
+
+  .worker__card > .details > .card__header > .top > .right > h6 {
+    font-size: 1rem;
+  }
+
+  .worker__card > .details > .card__header > .top > .right > p {
+    font-size: 0.75rem;
+  }
+
+  .worker__card > .details > .card__header > .top > .right > .MuiSvgIcon-root {
+    font-size: 1.5rem;
+  }
+
+  .worker__card > .details > .description {
+    width: 95%;
+    line-height: 1.6em;
+    margin: 1em 0 1.4em;
+  }
+
+  .worker__card > .details > .card__footer .tags {
+    font-size: 0.875rem;
+  }
+
+  .worker__card > .details > .card__footer button {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .worker__card {
+    padding: 1.5em 1.8em 2em 1em;
+    gap: 18px;
+  }
+
+  .worker__card > .details > .description {
+    font-size: 0.85rem;
+    line-height: 1.6em;
+    margin: 0.8em 0.5em 0.7em 0;
+  }
+}

@@ -1,0 +1,215 @@
+.interview__list__container * {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.browse__interviews {
+  padding-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  .browse__interviews {
+    padding: 1.5em 0 0;
+    flex: 1;
+  }
+}
+
+.interview__list__container {
+  padding: 1em 1em 2em;
+}
+
+/* interview group */
+.interview__group {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.interview__group:last-child {
+  margin-bottom: 0;
+}
+
+.interview__group > h2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.interview__group > p {
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+
+.interview__group > .interview__list {
+  margin-top: 1.5em;
+}
+
+.interview__group > button {
+  margin: 0 auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: transparent;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.interview__group > button > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+@media (min-width: 370px) {
+  .interview__group > h2 {
+    font-size: 1rem;
+  }
+  
+  .interview__group > p {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  .interview__group > button {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .interview__group > h2 {
+    font-size: 1.2rem;
+  }
+  
+  .interview__group > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  .interview__group > button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interview__group {
+    padding: 1.5em;
+  }
+}
+
+/* interview card */
+.interview__group .interview__card {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.7px solid #455A64;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.interview__group .interview__card > img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.interview__group .interview__card > .details * {
+  font-size: 0.75rem;
+}
+
+.interview__group .interview__card > .details > a {
+  line-height: 0.86rem;
+  color: #3B3BF2;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.interview__group .interview__card > .details > h3, .interview__group .interview__card > .details > p {
+  font-weight: 300;
+  font-size: 0.65rem;
+}
+
+.interview__group .interview__card > .details > .status {
+  display: flex;
+  gap: 0.20rem;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.interview__group .interview__card > .details > .status > img {
+  height: 0.870rem;
+  width: 0.870rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.interview__group .interview__card > .details > .status > p {
+  font-size: 0.60rem;
+  font-weight: 300;
+}
+
+.interview__group .interview__card > .details > .application__details {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.interview__group .interview__card > .details > .application__details > p {
+  font-size: 0.60rem;
+  font-weight: 300;
+}
+
+.interview__group .interview__card > .details > .application__details > p:last-child {
+  color: #008000;
+}
+
+@media (min-width: 370px) {
+  .interview__group .interview__card > .details > a {
+    font-size: 0.95rem;
+    line-height: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .interview__group .interview__card > .details > h3, .interview__group .interview__card > .details > p {
+    font-size: 0.80rem;
+  }
+
+  .interview__group .interview__card > .details > .status > p {
+    font-size: 0.71rem;
+  }
+  
+  .interview__group .interview__card > .details > .application__details > p {
+    font-size: 0.71rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .interview__group .interview__card > .details > a {
+    font-size: 1rem;
+  }
+  
+  .interview__group .interview__card > .details > h3, .interview__group .interview__card > .details > p {
+    font-size: 0.875rem;
+  }
+
+  .interview__group .interview__card > .details > .status > p {
+    font-size: 0.75rem;
+  }
+
+  .interview__group .interview__card > .details > .status > img {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+  
+  .interview__group .interview__card > .details > .application__details > p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interview__group .interview__card {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}

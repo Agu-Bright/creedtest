@@ -1,0 +1,22 @@
+.browse__projects * {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.browse__projects {
+  padding-bottom: 1em;
+}
+
+.project__list {
+  padding: 0 1em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 1024px) {
+  .browse__projects {
+    padding: 1.5em 0 0;
+    flex: 1;
+    overflow-y: auto;
+  }
+}

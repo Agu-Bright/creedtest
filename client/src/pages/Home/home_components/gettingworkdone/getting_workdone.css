@@ -1,0 +1,219 @@
+.getting-work-done{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.text-part11{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    display: block;
+}
+
+hidden-img{
+    display: none;
+}
+
+.head-txt{
+    font-family: inter;
+    font-size:30px;
+    color: black;
+    margin:0;
+    text-align: left;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.active11{
+    color: goldenrod;
+    font-style: normal;
+}
+
+.check-txt{
+    width: auto;
+    font-size: 18px;
+    font-family: inter;
+    margin-bottom: 15px;
+    color: black;
+}
+
+check-img{
+    background: url(../../../../assets/getting-work-done/check-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 25px;
+    min-height: 25px;
+    display: inline-block;
+    margin: 0;
+}
+
+.btn{
+    /* Frame 13 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13.6364px 27.2727px;
+    gap: 13.64px;
+
+    width: 180px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 10%;
+
+    background: #FAFAFA;
+    border: 2.72727px solid #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6.81818px;
+
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+
+    /* identical to box height */
+
+    color: #DAA520;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.img-part11{
+    display: block;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+}
+
+empty-img{
+    width: 90%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background: url(../../../../assets/getting-work-done/empty-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+
+@media screen and (max-width:989px){
+    
+    .head-txt{
+        font-family: inter;
+        font-size:20px;
+        color: black;
+        margin:0;
+        text-align: left;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    empty-img{
+        width: 90%;
+        height: 300px;
+        margin-top: 10%;
+    }
+
+    .check-txt{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    check-img{
+        min-width: 21px;
+        min-height: 21px;
+    }
+
+    .btn{
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+
+
+}
+
+@media screen and (max-width:760px) {
+    .getting-work-done{
+        width: 95%;
+    }
+
+    .head-txt{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:650px) {
+    .img-part11{
+        display: none;
+    }
+    
+    empty-img{
+        display: none;
+        
+    }
+
+    .head-txt{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    
+    
+    hidden-img{
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        background: url(../../../../assets/getting-work-done/empty-gif.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .getting-work-done{
+        width: 97%;
+    }
+    .text-part11{
+        width: auto;
+        height: 100%;
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn{
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:450px) {
+  
+    .check-txt{
+        font-size: 14px;
+    }
+
+}

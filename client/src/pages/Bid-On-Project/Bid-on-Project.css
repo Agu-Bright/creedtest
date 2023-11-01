@@ -1,0 +1,471 @@
+.place-bid-top-bar{
+    background-color: #455A64;
+    width: 100%;
+    height: 92px;
+    display: block;
+    margin: 0;
+}
+
+.place-bid-top-bar .flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+.place-bid-top-bar .text-part{
+    width: 60%;
+    max-width: 60%;
+    min-width: 60%;
+    display: block;
+    height: 100%;
+    margin: 0;
+
+    
+}
+
+.place-bid-top-bar .text-part h1{
+    color: whitesmoke;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: interbold;
+}
+
+.place-bid-top-bar .text-part p{
+    color: #ddd;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: interbold;
+}
+
+.place-bid-top-bar bid1{
+    background: url('./../../assets/images/post-bid-1.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: block;
+    width: 120px;
+    margin-left: 70px;
+
+
+}
+.place-bid-top-bar bid2{
+    background: url('./../../assets/images/post-bid-2.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    width: 120px;
+    display: block;
+}
+
+.place-bid-form{
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    background: 
+    linear-gradient(244.31deg, rgba(235, 235, 235, 0.7) 3.9%, rgba(255, 255, 255, 0.7) 15.97%, rgba(156, 171, 181, 0.7) 63.26%, rgba(69, 90, 100, 0.7) 83.88%);
+    margin: 0;
+    display: flex;
+}
+
+
+.place-bid-form .form-part{
+    width: 60%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    display: block;
+
+
+}
+
+.place-bid-form .form-part .p-mobile{
+    display: none;
+
+}
+
+
+.place-bid-form .input-flex{
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 10%;
+    height: auto;
+
+}
+
+.place-bid-form label{
+    font-size: 15px;
+    color: #323232;
+    display: block;
+    margin-bottom: 10px;
+    font-family: interbolder;
+}
+
+
+
+.place-bid-form-input-container1{
+    display: flex;
+    width: 304px;
+    background-color: white;
+    height: 40px !important;
+    max-height: 40px !important;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.place-bid-form-input-container1 input{
+    width: 264px; 
+    text-align: center;
+    height: 35px;
+    display: block;
+    border: none;
+    font-family: intermedium;
+    
+}
+
+
+.place-bid-form-input-container1 .naira-symbol{
+    display: block;
+    height: 100% !important;
+    width: 40px;
+    color: black;
+    font-family: interbolder;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+    line-height: 40px;
+}
+
+
+.place-bid-form-textarea-container1{
+    margin-top: 5%;
+    width: 650px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.place-bid-form-textarea-container1 textarea{
+    width: 100%;
+    height: 180px;
+    resize: none;
+    background-color: white;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.place-bid-form-textarea-container1 label{
+  
+    margin-bottom: 1px !important;
+
+}
+
+
+.place-bid-form-textarea-container1 .red-txt{
+    font-size: 12px;
+    color: red;
+    text-align: center;
+    font-family: intermedium;
+    margin-bottom: 5px;
+}
+
+.Send-button-10{
+    width: 250px !important;
+    height: 40px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white !important;
+    background-color: #455A64;
+    transition: 0.5s !important;
+    resize: none;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+
+
+
+.place-bid-form .project-img-part{
+    width: 40%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    display: block;
+    background-color: transparent;
+}
+
+.project-img-part p{
+    margin-top: 10%;
+    color: black !important;
+    font-family: interbolder;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: block;
+}
+
+.project-img-part img{
+    width: 350px;
+    height: auto;
+    max-height: 40%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .place-bid-form{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .place-bid-form .form-part{
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .place-bid-form .form-part .input-flex{
+        margin-top: 4%;
+    }
+
+    .place-bid-form .project-img-part{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        margin: 0;
+        margin-bottom: 50px;
+        display: block;
+        background-color: transparent;
+    }
+
+    .project-img-part p{
+        margin-top: 4%;
+        color: black !important;
+        font-family: interbolder;
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    
+    .place-bid-top-bar{
+        background-color: #455A64;
+        width: 100%;
+        height: 70px;
+        display: block;
+        margin: 0;
+    }
+
+    .place-bid-top-bar .text-part h1{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.place-bid-top-bar .text-part p{
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: intermedium;
+}
+
+
+
+.place-bid-top-bar bid1{
+    background: url('./../../assets/images/post-bid-1.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: block;
+    width: 100px;
+    margin-left: 40px;
+
+
+}
+.place-bid-top-bar bid2{
+    background: url('./../../assets/images/post-bid-2.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    width: 100px;
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+    .place-bid-form .input-flex{
+        display: block;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    
+    }
+    
+    .place-bid-form-input-container1{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .place-bid-form-textarea-container1{
+        width: 95% !important;
+    
+    }
+    
+    .place-bid-form-textarea-container1 textarea{
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 510px) {
+    .place-bid-top-bar{
+        height: 80px;
+        
+    }
+
+    .place-bid-top-bar .text-part h1{
+        font-size: 18px;
+        margin: 0;
+        line-height: 80px;
+}
+
+.place-bid-top-bar .text-part p{
+    display: none;
+}
+.place-bid-form .form-part .p-mobile{
+    color: #455A64;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: interbolder;
+    display: block !important;
+
+}
+
+
+
+.place-bid-top-bar bid1{
+    background: url('./../../assets/images/post-bid-1.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: block;
+    width: 80px;
+    margin-left: 10px;
+
+
+}
+.place-bid-top-bar bid2{
+    background: url('./../../assets/images/post-bid-2.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    width: 80px;
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .place-bid-top-bar .text-part h1{
+        font-size: 16px;
+        margin: 0;
+        line-height: 80px;
+}
+    .place-bid-top-bar{
+        margin-top: 60px;
+    }
+
+    .place-bid-form .form-part{
+        margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .place-bid-form .input-flex{
+        width: 97%;
+    }
+
+    .project-img-part img{
+        width: 300px;
+        height: auto;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .place-bid-form-textarea-container1{
+        width: 95% !important;
+    
+    }
+    
+    .place-bid-form-textarea-container1 textarea{
+        width: 95% !important;
+    }
+
+    .place-bid-form-input-container1 input{
+        width: 260px; 
+        
+    }
+    
+    
+    .place-bid-form-input-container1 .naira-symbol{
+        width: 40px;
+    }
+
+    .place-bid-top-bar{
+        height: 70px;
+    }
+
+    .place-bid-top-bar .text-part h1{
+        font-size: 14px;
+        margin: 0;
+        line-height: 70px;
+}
+
+}
+
+

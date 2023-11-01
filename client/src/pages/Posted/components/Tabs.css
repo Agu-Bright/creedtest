@@ -1,0 +1,14 @@
+.active-tab-navlink {
+  /* Transition styles */
+  animation-name: opacity-animation;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+@keyframes opacity-animation {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

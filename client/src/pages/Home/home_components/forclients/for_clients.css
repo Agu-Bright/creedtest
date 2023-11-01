@@ -1,0 +1,183 @@
+.for-clients{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-bottom: 3px solid goldenrod;
+}
+
+.first-header{
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+
+.img-part{
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    height: auto;
+    display: block;
+
+}
+
+clients-gif{
+    width: 90%;
+    height: 270px;
+    left: 44px;
+    margin-top: 50px;
+    background: url(../../../../assets/for-clients/for-clients-gif.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    
+}
+
+for-clients-img{
+    width: 150px;
+    height: 60px;
+    
+    margin-top: 30px !important;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../../../assets/for-clients/for-clients.png);
+    transform: rotate(-6.46deg);
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-part{
+    width: 65%;
+    height: 100%;
+    margin: 0;
+    height: auto;
+
+}
+
+
+.para-text{
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.learn-how-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: goldenrod;
+  
+    width: 110px;
+    height: 22px;
+  
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-decoration-color: none;
+    line-height: 18px;
+  
+    color: #FFFFFF;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  
+  }
+
+  @media screen and (max-width:980px) {
+    .for-clients{
+        width: 100%;
+    }
+
+  }
+
+@media screen and (max-width:700px) {
+    .for-clients{
+        width: 100%;
+        display: block;
+    }
+
+    
+
+    .img-part{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        height: auto;
+    
+    }
+    .para-text{
+        margin-right: 0%;
+    }
+
+    .text-part{
+        width: 80%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    
+    }
+
+    
+  }
+
+
+
+  @media screen and (max-width:450px) {
+    .text-part{
+        width: 95%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    
+    }
+    .hidden-header{
+        font-size: 18px;
+    }
+    .heading-text{
+        font-size: 16px;
+    }
+    
+    .bullet-point{
+        font-size: 14px;
+    }
+
+    clients-gif{
+
+        margin-top: 20px;
+       
+        
+    }
+    
+    for-clients-img{
+        margin-top: 10px !important;
+    }
+
+
+
+  }

@@ -1,0 +1,16 @@
+@media  (min-width: 451px) {
+  .assigne__content__container {
+    padding-top: 0;
+    border-top: .5px solid gray;
+  }
+}
+
+@media  (min-width: 1024px) {
+  .assigne__content__container {
+    padding-top: 14px;
+  }
+
+  .main__tab__link {
+    display: none;
+  }
+}

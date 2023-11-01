@@ -1,0 +1,733 @@
+.first-post-service-cont{
+    background: url(../../assets/Dashboard/tonyer.png) no-repeat center
+    center fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100% !important;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 !important;
+    display: block;    
+    /* position: static; */
+    font-family: inter;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E9E9E9;
+  }
+
+@media (hover: none) {
+    .first-post-service-cont {
+        background-attachment: initial;
+    }
+}
+
+.post-service-form{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    box-shadow: 0px 1px 5px rgb(196, 196, 196);
+    background: linear-gradient(158.57deg, #FFFFFF 14.09%, #f0f0f0 24.75%, #dddcdc 43.12%, #f0f0f0 74.72%);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.post-service-form spaces{
+    padding: 12.5px 0;
+    display: block;
+}
+
+.post-service-form h1{
+    text-align: center;
+    color:#263238 ;
+    font-size: 23px;
+    font-family: intermedium;
+    margin-top: 0 !important;
+}
+
+ul.post-service-tab{
+    width: 800px;
+    border-radius: 30px !important;
+    display: flex;
+    margin: 0 auto;
+    height: 40px;
+    padding-left: 0;
+    background: #263238;
+}
+ul.post-service-tab li{
+    width: 50% !important;
+    list-style: none;
+    color: white;
+    font-family: intermedium;
+    transition: all 0.7s;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+ul.post-service-tab li:nth-child(2){
+    width: 50% !important;
+    list-style: none;
+    color: white;
+    font-family: intermedium;
+    transition: all 0.7s;
+    height: 100%;
+    margin: 0;
+    line-height: 40px;
+    cursor: not-allowed! important;
+    
+}
+
+ul.post-service-tab .li-active{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #DAA520 !important;
+    border-radius: 30px;    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .first-post-service-cont{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+    .post-service-form{
+        width: 100%;
+        display: block;
+        margin: 0 !important;
+        min-height: 90vh !important;
+        height: auto;
+        border-radius: 0;
+        margin-bottom: 0 !important;
+    }
+
+    .first-post-service-cont{
+       
+        width: 100% !important;
+        min-height: 90vh;
+        
+      }
+    
+  }
+@media screen and (max-width: 836px) {
+    ul.post-service-tab{
+        width: 80%;
+    }
+    
+  }
+
+@media screen and (max-width: 650px) {
+
+    .first-post-service-cont{
+        width: 100% !important;
+        min-height: 100% !important;
+        background-attachment: scroll;
+      }
+
+      .post-service-form{
+        width: 100%;
+        display: block;
+        box-shadow: none;
+        padding-bottom: 60px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    .first-post-service-cont{
+        margin-top: 62px !important;
+      }
+
+      ul.post-service-tab{
+        width: 90% !important;
+        height: 35px;
+        
+    }
+    ul.post-service-tab li{
+        
+        
+        line-height: 35px;
+        font-size: 0.7rem;
+    }
+    ul.post-service-tab li:nth-child(2){
+        
+        
+        line-height: 35px;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+
+
+
+/* 
+ABOUT SERVICE CONTENT
+*/
+
+.About-service{
+    margin-top: 40px;
+    width: 700px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.About-service flex{
+    display: flex;
+}
+
+.About-service label{
+    font-weight: bold;
+    font-size: 0.9rem;
+    
+    
+}
+
+.About-service input{
+    width: 320px;
+    height: 40px;
+    font-size: 0.8rem;
+    padding: 2px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0.55em;
+    background: #fff;
+    resize: none;
+    outline: none;
+    color: black;
+    /* text-align: center; */
+    display: block;
+    margin-right: 47px;
+}
+
+
+
+.About-service button{
+    width: 320px;
+    height: 45px;
+    font-size: 0.8rem;
+    padding: 2px 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 0.55em;
+    background: #fff;
+    resize: none;
+    outline: none;
+    color: black;
+    text-align: left;
+}
+
+.About-service space{
+    height: 40px;
+    display: block;
+}
+
+.About-service h5{
+    font-size: 19px;
+    margin-top: 0;
+    color: #263238;
+    text-align: center;
+    font-family: intermedium;
+    margin-bottom: 0 !important;
+}
+
+.About-service p{
+    font-size: 12px;
+    color: #263238;
+    text-align: center;
+    font-family: inter;
+}
+
+.About-service upload_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 2px 5px;
+    display: block;
+    color: white;
+    background: url('./../../assets/images/plus1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.upload-container-service{
+    height: auto;
+    width: 1000px;
+    display: block;
+    margin-left: -150px;
+
+}
+
+.uploaded-img-containers{
+    width: 125px;
+    height: 125px;
+    display: inline-block;
+    margin-right: 20px !important;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 5px rgb(196, 196, 196) !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+}
+
+.About-service img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.7;
+    
+}
+
+.Post-service-uploaded-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.remove-uploaded-img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 105px;
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white !important;
+    background: url('./../../assets/images/cancel.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.next-button-1{
+    width: 250px !important;
+    height: 40px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white !important;
+    background-image: linear-gradient(to right, #263238, #263237, #DAA520) !important;
+    transition: 0.5s !important;
+    resize: none;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.next-button-1:hover{
+    background-image: linear-gradient(to right, #DAA520, #263238, #263237) !important;
+    transition: 0.5s !important;
+}
+
+@media screen and (max-width: 800px) {
+    .About-service label{
+        font-weight: bold;
+        font-size: 0.7rem;
+        
+        
+    }
+    
+    .About-service input{
+        width: 240px;
+        height: 30px;
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        border-radius: 0.55em;
+        margin-right: 20px;
+    }
+    
+    
+    
+    .About-service button{
+        width: 240px;
+        height: 35.8px;
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        border-radius: 0.55em;
+        margin-right: 20px;
+    }
+
+    .About-service{
+        width: 90%; 
+    }
+
+    .uploaded-img-containers{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-right: 10px !important;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      
+    }
+    .upload-container-service{
+        height: auto;
+        width: 100%;
+        display: block;
+        margin: 0;
+    
+    }
+
+    .remove-uploaded-img{
+        width: 13px;
+        height: 13px;
+        display: block;
+        margin-top: 5px;
+        margin-left: 80px;
+        
+    }
+    
+    
+  }
+
+
+  @media screen and (max-width: 570px) {
+
+    .next-button-1{
+        margin-bottom: 60px !important;
+    }
+    .About-service{
+        width: 97%; 
+    }
+
+    .About-service input{
+        width: 140px;
+        height: 30px;
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        border-radius: 0.55em;
+        margin-right: 20px;
+    }
+    .About-service flex{
+        margin: 0 auto;
+        width: 311.8px;
+    }
+    
+    
+    .center_time_mobile{
+      display: block;
+      width: 120px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .About-service button{
+        width: 240px;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    .About-service button:nth-child(2){
+        width: 140px;
+        height: 35.8px;
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        border-radius: 0.55em;
+        margin-right: 20px;
+    }
+
+
+}
+
+/* 
+SERVICE DETAILS CONTENT
+*/
+
+
+.Service-details{
+    margin-top: 40px;
+    width: 700px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Service-details textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.Service-details space{
+    height: 30px;
+    display: block;
+}
+
+
+.skills-required-service {
+    position: relative;
+    /* width: fit-content; */
+    margin-bottom: 1rem;
+  }
+  
+  .skills-required-service > h6 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.7rem;
+  }
+  
+  .skills-required-service > p {
+    font-size: 0.7rem;
+  }
+  
+  .skills-required-service-container {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  [name="close"] {
+    font-size: 0.8rem;
+    /* top: 0.2rem; */
+    display: inline-block;
+    position: relative;
+    margin-left: 0.3rem;
+    font-weight: bold;
+  }
+  
+  .skills-required-service-container button {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: intermedium;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    /* margin-right: 1rem; */
+    box-shadow: 1px 1px 8px rgb(199, 199, 199);
+  }
+  
+  .skills-required-service-container > input {
+    border: none;
+    outline: none;
+    margin-left: 0.6rem;
+    font-size: 0.7rem;
+    background-color: #fff;
+  }
+
+  .Service-details .duration_of_service{
+    display: flex;
+    width: 300px !important;
+    max-width: 300px !important;
+    height: auto;
+  }
+
+  .Service-details p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #263237;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .duration_of_service input{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    background-color: white;
+    display: block;
+    font-size: 13px !important;
+    margin-right: 20px;
+  }
+
+  .Service-details select{
+    width: 120px;
+    height: 45.9px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    background-color: white;
+    display: block;
+    font-size: 0.7rem;
+  }
+
+.Service-details .flex-container-inputs{
+    display: flex;
+    height: auto;
+    background: transparent;
+    width: auto;
+}
+
+.fixed_hourly-price-container{
+    background: transparent;
+    width: 270px;
+    height: auto;
+    display: block;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.fixed_hourly-price-container p{
+    font-size: 13px;
+    font-weight: 700;
+    color: #263237;
+    margin-left: 15px;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.fixed_hourly-price-container .flex{
+    display: flex;
+    margin-left: 15px;
+}
+
+.fixed_hourly-price-container input{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    background-color: white;
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.fixed_hourly-price-container .to{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: transparent;
+    line-height: 30px;
+    color: #263237;
+    font-weight: 600;
+}
+
+.vertical_stroke{
+    margin-top: 30px;
+    height: 70px;
+    width: 0.1px;
+    border: 0.5px solid #263237;
+    display: block;
+    margin-right: 15px;
+}
+
+.fixed_hourly-price-container:nth-child(2){
+    margin-right: 0;
+}
+
+.final_button-1{
+    width: 250px !important;
+    height: 40px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white !important;
+    background-image: linear-gradient(to right, #263238, #263237, #DAA520) !important;
+    transition: 0.5s !important;
+    resize: none;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.final_button-1:hover{
+    background-image: linear-gradient(to right, #DAA520, #263238, #263237) !important;
+    transition: 0.5s !important;
+}
+
+@media screen and (max-width: 735px) {
+    .Service-details{
+        margin-top: 40px;
+        width: 97%;
+    }
+
+    .Service-details textarea{
+        width: 100%;
+        height: 100px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 0.7rem;
+        resize: none;
+    }
+
+}
+@media screen and (max-width: 614px) {
+    .flex-container-inputs{
+        display: block !important;
+
+    }
+
+    .flex-container-inputs .vertical_stroke{
+        display: none;
+    }
+
+    .fixed_hourly-price-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .final_button-1{
+        margin-bottom: 60px;
+    }
+
+
+
+}
+@media screen and (max-width: 444px) {
+    .skills-required-service {
+        
+        width: 90% !important;
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+        
+      }
+
+      .skills-required-service-container{
+        overflow-y: scroll;
+        width: 77% !important;
+        margin: 0 !important;
+        padding-left: 100px;
+      }
+}

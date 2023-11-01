@@ -1,0 +1,32 @@
+const size = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  mobile: "450px",
+  mob: "550px",
+  tab: "620px",
+  tabs: "650px",
+  tabletS: "695px",
+  tablet: "768px",
+  laptopS: "850px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const device = {
+  mobileS: `(max-width: ${size.mobileS})`,
+  mobileM: `(max-width: ${size.mobileM})`,
+  mobileL: `(max-width: ${size.mobileL})`,
+  mobile: `(max-width: ${size.mobile})`,
+  mob: `(max-width: ${size.mob})`,
+  tab: `(max-width: ${size.tab})`,
+  tabs: `(max-width: ${size.tabs})`,
+  tabletS: `(max-width: ${size.tabletS})`,
+  tablet: `(max-width: ${size.tablet})`,
+  laptopS: `(max-width: ${size.laptopS})`,
+  laptop: `(max-width: ${size.laptop})`,
+  laptopL: `(max-width: ${size.laptopL})`,
+  desktop: `(max-width: ${size.desktop})`,
+  desktopL: `(max-width: ${size.desktop})`,
+};

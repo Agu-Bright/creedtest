@@ -1,0 +1,239 @@
+.Buisness{
+    width: 100%;
+    height: auto;
+
+}
+.buisness-logo{
+    width: 150px;
+}
+.Buisness_container{
+    display: flex;
+    justify-content: space-between;
+}
+.Buisness_form{
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex: 0.53;
+}
+.Buisness .form_image{
+    flex: 0.47;
+}
+.Buisness_form-container{
+    width: 60%;
+padding: 0 0 60px;
+margin-left: auto;
+margin-right: auto;
+color: #505e6c
+}
+.Buisness_form-container h2 {
+    margin-top: 0;   
+ }
+
+ .buisness_form-sub {
+    text-align: center; 
+ }
+
+ .buisness_form-sub span {
+    margin: 0 !important; 
+ }
+.buisness_form-sub span{
+    font-weight: 700;
+font-size: 13.646px;
+line-height: 140%;
+    color: #A0AEC0;
+margin-bottom: 7rem;
+
+}
+.Buisness_label{
+    margin-top: 2rem;
+}
+.Buisness_input input, .Buisness_cat-input select, .charge_input input, .service_input input{
+    box-sizing: border-box;
+    width: 100% !important;
+    height: calc(3.9em + 2px);
+    margin: 0 0 1em;
+    margin-top: 0.5rem;
+    padding:1rem;
+    border: 1px solid #ccc;
+    border-radius: 1.5em;
+    background: #fff;
+    resize: none;
+    outline: none;
+}
+.Buisness .post-a-job-footer{
+    margin: 5rem 0;
+}
+.buis_btn .btn-primary{
+    background: goldenrod;
+            border: none;
+            color: white;
+            border-radius: 10px;
+           width: 100% !important;
+           padding: 0.9rem;
+            box-shadow: none;
+            text-shadow: none;
+            outline: none !important;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+            margin-top: 3rem !important;
+
+        }
+        .buiness_already{
+        text-align: center;
+        margin-left: -2.9rem;
+            
+        }
+        .buiness_already span{
+          font-size:0.9rem;
+        }
+
+        .enterprise_reg{
+            font-size: 12px !important;
+            color: goldenrod;
+        }
+
+        .Buisness .form_image{
+            height: 100vh !important;
+        }
+
+      
+        .Buisness .form_image img{
+            width: 100% !important;
+            height: 93% !important;
+            object-fit: cover;
+            object-position: center;
+            margin-left: auto;
+        }
+
+@media screen and (min-width:1600px) {
+    .Buisness_input input, .Buisness_cat-input select, .charge_input input, .service_input input{
+        width: 470px;
+       
+    }
+    .Buisness_form-container{
+        width: 50%;
+    background-color: #ffffff;
+    padding: 0px 60px;
+    margin-left: 9rem;
+    margin-top: 4rem;
+    color: #505e6c
+    }
+    
+    .buis_btn .btn-primary{
+        width: 455px;
+        margin-left: -1rem;
+    }
+   
+}
+
+@media (max-width:991px) {
+    .buisness_form-sub{
+        /* padding: 0px 30px; */
+        margin: auto;
+     }
+
+    .Buisness_container{
+        display: flex;
+       flex-direction: column-reverse;
+       background-color: white;
+
+    }
+  
+    .Buisness_form-container{
+       margin: 0;
+       width: 500px;
+       padding: 60px 60px;
+       color: #505e6c;
+       background-color: white;
+
+    }
+    .Buisness .post-a-job-footer{
+        width: 100%;
+        margin: 5rem 0;
+    }
+    .buisness_form-sub{
+        /* margin-top:-4rem;
+        margin-left: -2rem; */
+    
+    }
+    .Buisness_input input, .Buisness_cat-input select, .charge_input input, .service_input input,.CAC_input .dropzone ,  .buis_btn .btn-primary{
+        width: 100% !important;
+       
+    } 
+    .buis_btn .btn-primary{
+       margin: 0 auto;
+       margin-top: 3rem;
+    }
+    .buisness_form-sub h2 strong{
+font-size: 2.4rem;
+    }
+    .buisness_form-sub span{
+        font-weight: 700;
+    font-size: 13.646px;
+    line-height: 140%;
+        color: #A0AEC0;
+    margin-bottom: 7rem;
+    
+    }
+    
+}
+@media (max-width:699px) {
+
+    .Buisness_form-container{
+       margin: 0 auto;
+       width: 85%;
+       padding: 0 0 60px;
+       color: #505e6c;
+       background-color: white;
+
+    }
+    .Buisness .post-a-job-footer{
+        display: none;
+    }
+    .buisness_form-sub{
+        /* margin-top:-4rem;
+        margin-left: -2rem; */
+    
+    }
+    .Buisness_input input, .Buisness_cat-input select, .charge_input input, .service_input input,.CAC_input .dropzone ,  .buis_btn .btn-primary{
+        width: 200px;
+       
+    } 
+}
+@media (max-width:400px) {
+
+    .Buisness_form-container{
+       margin: 0 auto;
+       width: 85%;
+       padding: 0 0 30px;
+       color: #505e6c;
+       background-color: white;
+
+    }
+
+    .Buisness_form-container h2 {
+        margin-top: 0;   
+     }
+
+     .buisness_form-sub {
+        text-align: center; 
+     }
+
+     .buisness_form-sub span {
+        margin: 0; 
+     }
+
+    .buisness_form-sub{
+        /* margin-top:-4rem;
+        margin-left: -2rem; */
+    
+    }
+    .Buisness_input input, .Buisness_cat-input select, .charge_input input, .service_input input,.CAC_input .dropzone ,  .buis_btn .btn-primary{
+        width: 100%;
+    } 
+    .buisness_form-sub h2 strong{
+        font-size: 1.4rem;
+            }
+
+}

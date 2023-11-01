@@ -1,0 +1,212 @@
+
+/* THIS IS THE NAVBAR CSS */
+.nav{
+    display: flex;
+    width: 100%;
+    height: 63px;
+    margin: 0;
+    background-color: white;
+    border-bottom: 2px solid goldenrod;
+    z-index: 100 !important;
+    
+  
+  }
+  /* THIS IS THE NAVBAR Logo */
+  .logo{
+    color: transparent;
+    width: 130px;
+    height: 63px;
+    left: 2.81%;
+    top: 0;
+    margin: 0;
+    position: absolute;
+    background: url('../../assets/logo-img/Creedlance logo without slogan black.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    display: block;
+    text-decoration: none;
+    text-decoration-color: none;
+  }
+  
+  /* THIS IS THE NAVBAR Links styling */
+  .nav .desktop-ul{
+    list-style-type: none;
+    margin-left: 15%;
+    padding: 0;
+    margin-top: 0;
+    
+  }
+  
+  .nav .desktop-ul:nth-child(3){
+    margin-left: 19%;
+  }
+  
+  .nav .desktop-li{
+    display: inline;
+  }
+  
+  .nav-links{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: intersemibold;
+    line-height: 63px;
+  }
+  
+  /* THIS IS THE NAV SEPERATOR LINE, BETWEEN LOGIN AND UL */
+  .nav-sep{
+    width: 2px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-right: 15px;
+    background-color: grey;
+  }
+  
+  /* THIS IS THE POST A JOB BUTTON */
+  .post-job{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+    background: goldenrod;
+  
+    width: 90px;
+    height: 18px;
+  
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-decoration-color: none;
+    line-height: 18px;
+  
+    color: #FFFFFF;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  
+  }
+  
+  /* THIS IS THE MENU BUTTON*/
+  
+  .media_button {
+    width: 35px;
+    height: auto;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 23px;
+    cursor: pointer;
+    display: none;
+  
+  }
+  
+  .flex{
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  /* THESE ARE THE DASHES */
+  
+  .element1{
+    background: #1C0352;
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+    height: 3.5px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  /* THIS IS THE DOT */
+  .element2{
+    background-color: #1C0352;
+    width: 4px;
+    display: block;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 3px;
+  }
+  
+  /* THESE ARE THE DASHES */
+  .element3{
+    background-color: #1C0352;
+    width: 29px;
+    display: block;
+    height: 4px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+  }
+  
+  /* THESE ARE THE DASHES */
+  .element4{
+    background: #1C0352;
+    width: 100%;
+    display: block;
+    height: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  
+  
+  @media screen and (max-width: 1267px){
+    .logo{
+      left: 1.81%;
+      right: 83.66%;
+      
+    }
+    .nav .desktop-ul{
+      margin-left: 14%;
+    }
+    .nav .desktop-ul:nth-child(3){
+      margin-left: 12%;
+    }
+  
+    .nav-links{
+      margin-left: 20px;
+      font-size: 13px;
+    }
+    .nav-sep{
+      width: 2px;
+      height: 30px;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 15px;
+      background-color: grey;
+    }
+  }
+  
+  @media screen and (max-width: 1000px){
+    .nav .desktop-ul{
+      display: none;
+    }
+    .nav  .desktop-li{
+      display: none;
+    }
+    .nav-sep{
+        display: none;
+    }
+  
+    .media_button {
+      display: block;
+    }
+  }

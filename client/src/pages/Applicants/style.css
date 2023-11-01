@@ -1,0 +1,11 @@
+@media  (min-width: 451px) {
+  .applicant__page {
+    padding-top: 0;
+  }
+}
+
+@media  (min-width: 545px) {
+  .applicant__profile {
+    max-width: 40vw;
+  }
+}

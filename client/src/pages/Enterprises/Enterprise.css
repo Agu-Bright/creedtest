@@ -1,0 +1,607 @@
+.Enterprise{
+    width: 100%;
+    height: 600px;
+    max-height: 520px;
+    min-height: 520px;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                         rgba(0, 0, 0, 0.7)), url('../../assets/EnterprisePagepic/Rectangle-55.png');
+    
+     position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+  
+ }
+ .enterprise-content{
+    /* position: absolute; */
+    animation: slide-up 1.5s ease;
+    animation-fill-mode: forwards;
+     visibility: hidden;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 2em;
+ }
+ 
+ .enterprise-title{
+    font-family: interbolder;
+    text-shadow: 0px 4.49186px 4.49186px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    margin-left: 2%;
+    margin-top: 50px;
+    color: transparent;
+    text-align: left;
+    opacity: 0.9;
+    width: 40%;
+    background-image: linear-gradient(to right, white, white, #DAA520);
+    background-clip: text;
+    -webkit-background-clip: text;
+ }
+
+ .enterprise-title span b{
+   /* color: #DAA520; */
+ }
+
+ .enterprise-para{
+    font-size: 18px;
+    font-family: inter;
+    margin-left: 2%;
+    margin-top: 15px;
+    color: #CBDAFF;
+    opacity: 0.8;
+ }
+
+ .enterprise-btn_display{
+    display: flex;
+    width: auto;
+    height: auto; 
+    background: transparent;
+    margin-left: 2%;
+    margin-top: 50px;
+ }
+ .enterprise-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 8px;
+    /* gap: 13.64px; */
+
+    width: 150px;
+    height: 30px;
+
+    background: #DAA520;
+    border-radius: 4px;
+    text-decoration: none;
+    text-decoration-color: none;
+    font-family: inter;
+    font-style: bold;
+    font-size: 18px;
+    /* line-height: 33px; */
+    margin-left: 10px;
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+ }
+ .Enterprise_suite{
+   width: 100%;
+   /* height: 700px; */
+   padding-bottom: 3em;
+   border-bottom: 1px solid goldenrod;
+   /* background-image: linear-gradient(to right, rgba(242, 228, 197, 0.605), rgba(240, 223, 185, 0.432), rgba(252, 252, 247, 0.794), white); */
+   padding-top: 50px;
+ }
+
+ .Enterprise_suite-title{
+    font-family: interbolder;
+    text-shadow: 0px 4.49186px 4.49186px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    margin-left: 6.5%;
+    /* margin-top: 50px; */
+    color: #565353;
+    text-align: left;
+    opacity: 0.9;
+    width: 70%;
+ }
+ .Enterprise_suite-sub{
+    font-size: 18px;
+    font-family: inter;
+    margin-left: 6.5%;
+    margin-top: 40px;
+    width: 70%;
+    margin-bottom: 40px;
+    color: #000000;
+    opacity: 0.8;
+    line-height: 26px;
+ }
+ 
+ .Enterprise_suite-content{
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+    /* background: url(../../assets/EnterprisePagepic/Rectangle-485.png);
+    background-position: 700px -70px;
+    background-size:460px;
+    background-repeat: no-repeat; */
+ }
+ .Enterprise_suite-content-first-title{
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 4%;
+    margin-bottom: 2%;
+ }
+ .Enterprise_suite-content-first-para{
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 7%;
+    margin-left: 4%;
+
+ }
+ .Enterprise_suite-content-second-title{
+    width: auto;
+    color: black;
+    font-family: inter;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 4%;
+
+    text-align: left;
+    margin-bottom: 2%;
+   
+ }
+ .Enterprise_suite-content-second-para{
+    font-size: 15px;
+    max-width: 75%;
+    margin-left: 4%;
+    margin-bottom: 7%;
+    line-height: 30px;
+ }
+
+ .Enterprise_suite-content-image{
+   margin-top: -9%;
+   margin-right: 4%;
+}
+
+ .Enterprise_suite-content-image img{
+    /* margin-bottom: 70%; */
+    display: flex;
+ }
+
+ .Enterprise-step{
+    height: 600px;
+    background-image:url('../../assets//EnterprisePagepic/logo.png');
+    position: relative;
+    background-position: right;
+    background-size: 500px;
+    background-repeat: no-repeat;
+ }
+ .Enterprise-step_content{
+    position: absolute;
+ }
+ .Enterprise-step_content-title{
+    font-family: interbolder;
+    font-size: 30px;
+    margin-left: 7%;
+    margin-top: 50px;
+    color: #000000;
+    text-align: left;
+    opacity: 0.9;
+    font-weight: 500;
+ }
+ .Enterprise-step_content-para{
+    font-size: 18px;
+    font-family: inter;
+    margin-left: 7%;
+    margin-top: 8px;
+    color: #000000;
+    opacity: 0.8;
+   
+ }
+ 
+ .Enterprise_mainContent-container{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 2rem;
+ }
+
+ .Enterprise1{
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #6D90A0;
+    padding: 1.5rem 1rem;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(231, 193, 42, 0.23);
+    transition: 995ms;
+ }
+
+ .Enterprise1:hover{
+   transform: scale(1.1);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(231, 193, 42, 0.23);
+}
+
+ .Enterprise-step_icon{
+   margin-right: 25%;
+   text-align: center;
+ }
+
+ .Enteprise-step_title{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: interSemibold;
+    font-size: 1em;
+    margin-top: 0.5rem;
+ }
+
+ .Enteprise-step_title::first-letter{
+   font-family: serif;
+   font-size: 1.7em;
+   color: rgb(237, 180, 35);
+   letter-spacing: 0.1rem;
+   font-weight: 700;
+}
+
+ .Enterprise-step_sub{
+   width: 93%;
+   color: white;
+   line-height: 20px;
+   font-size: 0.77em;
+   padding-left: 1.2rem;
+   padding-bottom:0.3rem ;
+   font-family: inter;
+ }
+
+ .enterprise-step-btn{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    gap: 13.64px;
+
+    width: 170px;
+    height: 30px;
+
+    background: #6D90A0;
+    border-radius: 4px;
+    text-decoration: none;
+    text-decoration-color: none;
+    font-family: inter;
+    font-style: bold;
+    font-size: 1em;
+    line-height: 33px;
+    margin-left: 3%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 2em;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 10px 6px 6px rgba(231, 193, 42, 0.654);
+   transition: 165ms;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+ }
+
+ .enterprise-step-btn:hover{
+   transform: scale(1.05);
+ }
+
+ .Enterprise_business{
+    height: 500px;
+    display: flex;
+    position: relative;
+    margin-top: 3rem;
+   /* background-image: url(../../assets/EnterprisePagepic/Rectangle-70.png);
+   background-position: 850px -10px;
+   background-size: 530px;
+   background-repeat: no-repeat;
+   margin-top: 3em;
+   margin-bottom: 3em; */
+ }
+
+ .Enterprise_business::after{
+   content: "";
+   position: absolute;
+   height: 80%;
+   width: 30%;
+   top: 10%;
+   background-color: rgba(227, 193, 58, 0.783);
+   right: 7%;
+   z-index: 1;
+   -webkit-clip-path: polygon(6% 49%, 20% 20%, 15% 0%, 51% 17%, 85% 15%, 100% 15%, 100% 85%, 61% 38%, 85% 87%, 12% 72%, 23% 90%, 32% 48%);
+clip-path: polygon(6% 49%, 20% 20%, 15% 0%, 51% 17%, 85% 15%, 100% 15%, 100% 85%, 61% 38%, 85% 87%, 12% 72%, 23% 90%, 32% 48%);
+}
+
+.Enterprise_business::before{
+   content: "";
+   position: absolute;
+   height: 80%;
+   width: 30%;
+   top: 10%;
+   background-color: rgba(189, 153, 10, 0.783);
+   right: 9%;
+   z-index: 1;
+   -webkit-clip-path: polygon(6% 49%, 20% 20%, 15% 0%, 51% 17%, 85% 15%, 100% 15%, 100% 85%, 61% 38%, 85% 87%, 12% 72%, 23% 90%, 32% 48%);
+clip-path: polygon(6% 49%, 20% 20%, 15% 0%, 51% 17%, 85% 15%, 100% 15%, 100% 85%, 61% 38%, 85% 87%, 12% 72%, 23% 90%, 32% 48%);
+}
+ 
+ .Enterprise_busisness-content-image img{
+   display: none;
+ }
+ .Enterprise_busisness-content-title{
+    font-family: interbolder;
+    font-size: 30px;
+    margin-left: 8%;
+    margin-top: 5rem;
+    color: #000000;
+    text-align: left;
+    opacity: 0.9;
+    font-weight: 500;
+    width: 70%;
+    z-index: 2;
+    position: relative;
+ }
+.ent-business-btn{
+   margin-top: 6rem;
+   margin-left: 7%;
+}
+@media screen and (min-width:1600px) {
+   .Enterprise_suite-content{
+      display: flex;
+      justify-content: center;
+      margin-left: 4%;
+      background: url(../../assets/EnterprisePagepic/Rectangle\ 485.png);
+      background-position: 1000px -70px;
+      background-size:530px;
+      background-repeat: no-repeat;
+   }
+   .Enterprise-step{
+      height: 600px;
+      background-image:url('../../assets//EnterprisePagepic/logo.png');
+      position: relative;
+      background-position: right;
+      background-size: 600px;
+      background-repeat: no-repeat;
+   }
+   .Enterprise1{
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+   }
+   .Enterprise-step_icon{
+      margin-right: 20%;
+    }
+    .Enterprise-step_sub{
+      width: 87%;
+      color: white;
+      line-height: 20px;
+      font-size: 15px;
+     padding-left: 1.5rem;
+     text-align: center;
+     padding-bottom:0.3rem ;
+   }
+   .Enterprise_business{
+      height: 500px;
+      display: flex;
+     background-image: url(../../assets/EnterprisePagepic/Rectangle\ 70.png);
+     background-position: 1000px -10px;
+     background-size: 540px;
+     background-repeat: no-repeat;
+     
+   }
+}
+ @media screen and (max-width:950px){
+   .Enterprise_suite{
+      height: auto;
+         }
+   .enterprise-title{
+      font-size: 40px;
+     
+      width: 70%;
+   }
+   .enterprise-para{
+      font-size: 15px;
+
+   }
+  
+   .enterprise-content{
+      margin-top: 0;
+   }
+
+   .Enterprise_suite-title{
+      font-size: 18px;
+      margin-left: 0;
+      margin-top: 50px;
+      color: #565353;
+      text-align: center;
+      opacity: 0.9;
+      width: 70%;
+   }
+   .Enterprise_suite-sub{
+      font-size: 18px;
+      font-family: inter;
+      margin-left: 10%;
+      margin-top: 40px;
+      width: 70%;
+      color: #000000;
+      opacity: 0.8;
+   }
+   .Enterprise_suite-content{
+      display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     background-image: none;
+     
+   }
+   .Enterprise_suite-content-first-title{
+      margin-bottom:7% ;
+   }
+   .Enterprise_suite-content-second-title{
+      margin-bottom:7% ;
+   }
+   .Enterprise_suite-content-second-para{
+      width: 80%;
+   }
+.Enterprise_suite-content-image img{
+   display: flex;
+ width: 70%;
+ margin-left: 10%;
+ margin-bottom: 10%;
+}
+.Enterprise_mainContent-container{
+   flex-wrap: wrap;
+   
+   justify-content: center;
+gap: 1.4rem;
+width: 100%;
+}
+.Enterprise1{
+width: 70%;
+
+text-align: center;
+}
+.Enterprise-step{
+height: 1150px;
+border-bottom: 1px solid #DAA520;
+}
+.Enterprise-step_content-para{
+   font-size: 12px;
+   width: 90%;
+}
+.Enterprise-step_content-title{
+   font-family: interbolder;
+   font-size: 18px;
+   margin-bottom: 1rem;
+}
+.enterprise-btn_display{
+   display: flex;
+   width: auto;
+   height: auto;
+   background: transparent;
+   margin-top: 25px;
+align-items: center;
+margin-right: 50px;
+}
+
+
+.Enterprise-step {
+background-size: 600px;
+}
+
+
+
+.enterprise-step-btn:nth-child(1){
+margin-left: 12% !important;
+/* background-color: #DAA520; */
+}
+.get{
+   margin-left: 20%;
+}
+.Enterprise_business{
+   height: auto;
+background-image: none;
+}
+.Enterprise_busisness-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+.Enterprise_busisness-content-image img{
+   display: block;
+   width: 70%;
+   margin:0 auto;
+   
+
+ }
+ .Enterprise_busisness-content-title{
+   font-family: interbolder;
+   font-size: 15px;
+   margin: 0 0 0 8%;
+   color: #000000;
+   text-align: left;
+   opacity: 0.9;
+   font-weight: 500;
+   width: 80%;
+   margin-bottom: 2rem;
+}
+
+.ent-business-btn{
+   margin-top: 0;
+   margin-left:4rem;
+   margin-bottom: 2.3rem;
+   background-color: #6D90A0 !important;
+}
+
+.Enterprise_business::before, .Enterprise_business::after{
+   display: none;
+}
+ }
+ @media screen and (max-width: 450px) {
+   .enterprise-title{
+      font-size: 30px;
+      width: 80%;
+     
+   }.enterprise-content{
+      margin-left: 3%;
+      /* margin-top: 25%; */
+   }
+   .Enterprise_suite{
+height: auto;
+   }
+   .Enterprise1{
+      width:70%;
+      
+      text-align: center;
+      }
+      .Enterprise-step_icon img{
+         width: 30%;
+      }
+      .Enterprise_busisness-content{
+       justify-content: end;
+      }
+     
+     .Enterprise_suite-title {
+         margin-left: 10%;
+         text-align: left;
+     }
+
+     .Enterprise-step{
+         height: 1350px;
+         border-bottom: 1px solid #DAA520;
+      }
+ }
+
+ @media screen and (max-width: 300px) {
+   .enterprise-btn_display{
+    text-decoration: none;
+   }
+   .get {
+      margin-left: 3%;
+  }
+  .Enterprise_business{
+height: 700px;
+  }
+  .enterprise-step-btn {
+   margin-left: 3%;
+}
+
+ }

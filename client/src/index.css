@@ -1,0 +1,58 @@
+* {
+	overscroll-behavior: none;
+	outline: none;
+}
+
+/* html.modal__open {
+	overflow-y: hidden;
+} */
+
+
+.sub__modal__open {
+  position: fixed;
+  z-index: 1910;
+}
+
+html,
+body {
+	margin: 0;
+	width: 100%;
+	/* height: 100%; */
+	overflow-x: hidden;
+
+	/* I imported this FONTS BELOW*/
+	font-family: inter;
+}
+
+body {
+	overflow-x: hidden;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* THESE ARE THE FONTS THAT THE SITE WILL BE USING*/
+@font-face {
+	font-family: interbolder;
+	src: url("./assets/font-family-inter/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: interbold;
+	src: url("./assets/font-family-inter/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: intermedium;
+	src: url("./assets/font-family-inter/Inter-Medium.ttf");
+}
+
+@font-face {
+	font-family: inter;
+	src: url("./assets/font-family-inter/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: interSemibold;
+	src: url("./assets/font-family-inter/Inter-SemiBold.ttf");
+}

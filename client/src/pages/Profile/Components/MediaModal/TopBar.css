@@ -1,0 +1,18 @@
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .media__modal__top__bar {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.5rem;
+  }
+
+  .title {
+    color: #000;
+    font-size: 1rem;
+    font-family: intersemibold;
+  }
+}
